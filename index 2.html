@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[Nama Produk] – Bioetanol dari Jerami dan Tongkol Jagung</title>
+<meta name="description" content="Bioetanol generasi kedua dari limbah pertanian: jerami padi dan tongkol jagung. Energi bersih dari sisa panen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16302b; --muted:#4d625d; --bg:#fbfaf4; --panel:#f0eddc;
+  --straw:#d9a521; --leaf:#2f6b4f; --line:#d9d6c3; --white:#fff;
+  --head:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:var(--body);font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--bg)}
+a{color:var(--leaf)}
+:focus-visible{outline:3px solid var(--straw);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.5rem 1rem;z-index:10}
+.skip:focus{left:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--head);line-height:1.15;letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,4vw,2.3rem);margin-bottom:1rem}
+h3{font-size:1.15rem;margin-bottom:.35rem}
+p{max-width:68ch}
+section{padding:4rem 0}
+header.top{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:.8rem;padding-bottom:.8rem;flex-wrap:wrap}
+.brand{font-family:var(--head);font-weight:800;text-decoration:none;color:var(--ink)}
+nav ul{list-style:none;display:flex;gap:1.1rem;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--leaf)}
+
+/* Hero: batang jerami sebagai motif garis */
+.hero{background:
+  repeating-linear-gradient(100deg,transparent 0 22px,rgba(217,165,33,.13) 22px 24px),var(--panel);
+  padding:5rem 0 4.5rem}
+.hero h1{font-size:clamp(2.2rem,6.5vw,4rem);font-weight:800;max-width:15ch;margin-bottom:1.1rem}
+.hero p{font-size:1.2rem;color:var(--muted);margin-bottom:1.6rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:6px;font-weight:600;text-decoration:none;margin:0 .6rem .6rem 0}
+.btn.p{background:var(--leaf);color:#fff}
+.btn.p:hover{background:var(--ink)}
+.btn.s{border:2px solid var(--ink);color:var(--ink)}
+.btn.s:hover{background:var(--ink);color:#fff}
+
+.two{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+.alt{background:var(--panel)}
+.list{list-style:none;display:grid;gap:1.1rem}
+.list li{border-left:4px solid var(--straw);padding-left:1rem}
+
+.steps{list-style:none;counter-reset:s;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:1.5rem}
+.steps li{counter-increment:s;background:var(--white);border:1px solid var(--line);padding:1.1rem;border-radius:8px}
+.steps li::before{content:counter(s);display:inline-grid;place-items:center;width:2rem;height:2rem;border-radius:50%;background:var(--leaf);color:#fff;font-family:var(--head);font-weight:700;margin-bottom:.5rem}
+
+.who{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:1.5rem}
+.who div{border-top:4px solid var(--leaf);padding-top:.7rem}
+
+table{border-collapse:collapse;width:100%;margin-top:1.2rem;background:var(--white)}
+th,td{border:1px solid var(--line);padding:.7rem .9rem;text-align:left;vertical-align:top}
+th{background:var(--ink);color:#fff;font-family:var(--head)}
+.scroll{overflow-x:auto}
+.ph{background:#fff3c4;padding:0 .3em;border-radius:3px}
+
+footer{background:var(--ink);color:#e9eee8;padding:2.5rem 0}
+footer a{color:var(--straw)}
+@media(max-width:720px){.two{grid-template-columns:1fr}section{padding:3rem 0}.hero{padding:3.5rem 0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#utama">Lompat ke konten</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">[Nama Produk]</a>
+    <nav aria-label="Menu utama">
+      <ul>
+        <li><a href="#masalah">Masalah</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#pasar">Untuk siapa</a></li>
+        <li><a href="#bisnis">Bisnis</a></li>
+        <li><a href="#dampak">Dampak</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="utama">
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Sisa panen jadi energi bersih.</h1>
+    <p>Kami mengolah jerami padi dan tongkol jagung, limbah yang biasanya dibakar atau dibuang, menjadi bioetanol yang bisa menggantikan sebagian bahan bakar fosil.</p>
+    <a class="btn p" href="#produk">Lihat cara kerjanya</a>
+    <a class="btn s" href="#kontak">Ajak kami kerja sama</a>
+  </div>
+</section>
+
+<section id="masalah">
+  <div class="wrap">
+    <h2>Limbah menumpuk, energi masih bergantung pada fosil</h2>
+    <div class="two">
+      <p>Setiap musim panen menyisakan jerami dan tongkol jagung dalam jumlah besar. Sebagian besar dibakar di lahan, menghasilkan asap dan emisi karbon, atau dibiarkan membusuk. Petani tidak mendapat nilai tambah dari sisa ini.</p>
+      <p>Di sisi lain, kebutuhan bahan bakar terus naik dan sebagian besar masih dipenuhi energi fosil. Bahan baku etanol dari pangan (seperti tebu atau jagung pipil) juga bersaing dengan kebutuhan pangan.</p>
+    </div>
+    <p style="margin-top:1.2rem"><span class="ph">[Isi data lokal Anda: volume limbah jerami/tongkol di daerah Anda, dan sumbernya, mis. BPS/Kementan]</span></p>
+  </div>
+</section>
+
+<section id="produk" class="alt">
+  <div class="wrap">
+    <h2>Bioetanol generasi kedua dari limbah lignoselulosa</h2>
+    <p>Jerami dan tongkol jagung kaya selulosa. Selulosa dipecah menjadi gula, lalu difermentasi menjadi etanol. Karena bahannya limbah, produk kami tidak memakai bahan pangan.</p>
+    <ol class="steps">
+      <li><h3>Kumpulkan</h3>Limbah dibeli dari petani dan kelompok tani sekitar.</li>
+      <li><h3>Praperlakuan</h3>Bahan dicacah dan diolah agar serat lignoselulosa terbuka.</li>
+      <li><h3>Hidrolisis</h3>Enzim memecah selulosa menjadi gula sederhana.</li>
+      <li><h3>Fermentasi</h3>Ragi mengubah gula menjadi etanol.</li>
+      <li><h3>Distilasi</h3>Etanol dimurnikan sampai kadar sesuai kebutuhan pasar.</li>
+    </ol>
+    <p style="margin-top:1.2rem"><span class="ph">[Sesuaikan langkah dengan proses yang benar-benar Anda pakai, tambahkan kadar etanol, rendemen, dan hasil uji lab jika ada]</span></p>
+  </div>
+</section>
+
+<section id="keunggulan">
+  <div class="wrap">
+    <h2>Mengapa produk ini berbeda</h2>
+    <ul class="list">
+      <li><h3>Tidak bersaing dengan pangan</h3>Bahan baku murni limbah pertanian.</li>
+      <li><h3>Mengurangi pembakaran jerami</h3>Limbah punya harga, sehingga petani punya alasan tidak membakarnya.</li>
+      <li><h3>Emisi lebih rendah</h3>Karbon yang dilepas saat dipakai sebelumnya diserap tanaman saat tumbuh.</li>
+      <li><h3>Ekonomi lokal</h3>Bahan dibeli dari petani sekitar, membuka pendapatan baru dan lapangan kerja.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="pasar" class="alt">
+  <div class="wrap">
+    <h2>Untuk siapa produk ini</h2>
+    <p>Web ini terbuka untuk siapa saja. Berikut pihak yang paling kami harapkan menghubungi kami.</p>
+    <div class="who">
+      <div><h3>Petani dan kelompok tani</h3>Yang ingin menjual jerami atau tongkol jagung, bukan membakarnya.</div>
+      <div><h3>Industri dan pembeli etanol</h3>Campuran bahan bakar, pelarut, disinfektan, dan kebutuhan industri lain.</div>
+      <div><h3>Pemerintah dan lembaga</h3>Dinas pertanian, energi, dan lingkungan yang mencari solusi energi terbarukan.</div>
+      <div><h3>Investor dan mitra</h3>Pihak yang ingin mendukung energi hijau berbasis limbah.</div>
+    </div>
+  </div>
+</section>
+
+<section id="bisnis">
+  <div class="wrap">
+    <h2>Model bisnis</h2>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Komponen</th><th>Ringkasan</th></tr></thead>
+      <tbody>
+        <tr><td>Pemasok</td><td>Petani dan kelompok tani mitra<span class="ph">[isi skema harga/kemitraan]</span></td></tr>
+        <tr><td>Produk</td><td>Bioetanol <span class="ph">[kadar]</span>; potensi produk turunan dari residu proses</td></tr>
+        <tr><td>Pelanggan</td><td><span class="ph">[segmen utama Anda]</span></td></tr>
+        <tr><td>Pendapatan</td><td>Penjualan etanol <span class="ph">[harga per liter]</span></td></tr>
+        <tr><td>Tahap saat ini</td><td><span class="ph">[ide / prototipe / uji lab / pilot]</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section id="dampak" class="alt">
+  <div class="wrap">
+    <h2>Dampak yang kami tuju</h2>
+    <p>Produk ini sejalan dengan beberapa Tujuan Pembangunan Berkelanjutan (SDGs): energi bersih dan terjangkau (SDG 7), pekerjaan layak dan pertumbuhan ekonomi (SDG 8), konsumsi dan produksi yang bertanggung jawab (SDG 12), dan penanganan perubahan iklim (SDG 13).</p>
+  </div>
+</section>
+
+<section id="tim">
+  <div class="wrap">
+    <h2>Tim</h2>
+    <p><span class="ph">[Nama anggota, peran, asal kampus/instansi, dosen pembimbing]</span></p>
+  </div>
+</section>
+
+<section id="kontak" class="alt">
+  <div class="wrap">
+    <h2>Mari berdiskusi</h2>
+    <p>Tertarik menjadi pemasok, pembeli, atau mitra? Hubungi kami.</p>
+    <p style="margin-top:.8rem">Email: <a href="mailto:emailkamu@example.com">emailkamu@example.com</a><br>
+    Instagram: <a href="#">@akunkamu</a><br>
+    WhatsApp: <span class="ph">[nomor]</span></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 [Nama Tim/Produk]. Dibuat untuk <span class="ph" style="color:var(--ink)">[nama lomba]</span>.</p>
+  </div>
+</footer>
+</body>
+</html>
